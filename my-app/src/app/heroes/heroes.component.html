@@ -4,13 +4,10 @@
       [class.selected]="hero === selectedHero"
       [class.red]="hero === selectedHero"
       (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>li>
 </ul>
 
-<div *ngIf="selectedHero">
 
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name">
-    </label>
-</div>
+

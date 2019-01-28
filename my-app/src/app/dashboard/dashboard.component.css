@@ -1,0 +1,25 @@
+/* DashboardComponent's private CSS styles */
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  height: 60px;
+  background: red;
+}
+.main{
+  border: 1px solid green;
+  flex: 1;
+  display: flex;
+}
+.aside{
+  width: 200px;
+  overflow-y: scroll;
+  border: 1px solid saddlebrown;
+}
+.main_content{
+  flex: 1;
+}
+
